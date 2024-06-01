@@ -1,0 +1,143 @@
+.tagawika-main {
+  margin-left: 5rem;
+  padding: .5rem 2rem;
+  color: var(--text);
+  height: 95vh;
+  overflow: hidden;
+}
+
+.tagawika-main section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tagawika-main .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagawika-main h1 {
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+}
+
+.tagawika-main span {
+  font-family: var(--font-family-raccai);
+  color: var(--secondary);
+}
+
+.tagawika-main p {
+  width: 60%;
+  text-align: center;
+  line-height: 28px;
+}
+
+.vinyl {
+  position: relative; /* Position relative for absolute positioning of background */
+  height: 16rem;
+  background-color: var(--secondary);
+  border-radius: 2rem;
+  padding: 2rem;
+  z-index: 9999;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.vinyl-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -9999;
+}
+
+.vinyl-bg img {
+  height: 100%;
+  object-fit: cover;
+  width: 20rem;
+  border-radius: 2rem;
+}
+
+.vinyl .vinyl-img {
+  height: 100%; 
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.tagawika-main .text button {
+  border: 0.1rem solid var(--secondary);
+  font-family: var(--font-family);
+  color: var(--text);
+  background-color: var(--primary);
+  padding: .5rem 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+.tagawika-main .text button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: bold;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1245px) {
+  .vinyl {
+    height: 16rem;
+  }
+
+  .vinyl-bg img {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .tagawika-main p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .vinyl {
+    height: 14rem;
+    margin-bottom: -1rem;
+  }
+
+  .vinyl-bg img {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tagawika-main {
+    margin-left: 0;
+    margin: 1rem 0 5rem 0;
+    overflow: visible;
+  }
+
+  .tagawika-main p {
+    text-align: left;
+    width: 100%;
+  }
+}

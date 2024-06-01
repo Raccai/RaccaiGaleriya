@@ -1,0 +1,298 @@
+.notalingua-main {
+  font-family: var(--font-family-notalingua);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+.notalingua-main .cover {
+  width: 2000px;
+  margin-left: 0;
+  position: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--text2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text);
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255)
+}
+
+.notalingua-main .intro,
+.notalingua-main .adding,
+.notalingua-main .sort,
+.notalingua-main .details,
+.notalingua-main .data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5rem;
+  padding: 5rem 1rem;
+  gap: 2rem;
+}
+
+.notalingua-main footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-left: 5rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--text2);
+}
+
+.notalingua-main footer .go-back {
+  border-radius: 5rem;
+  padding: .4rem 1.4rem;
+  border: 2px solid var(--notalingua-tertiary);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  font-size: 1rem;
+}
+
+.notalingua-main footer .go-back:hover {
+  background-color: var(--notalingua-tertiary);
+}
+
+.notalingua-main footer .footer-title {
+  display: flex;
+  gap: 1rem;
+}
+
+.notalingua-main footer img {
+  width: 2rem;
+  filter: grayscale(100%);
+}
+
+.notalingua-main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-left: 5rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--notalingua-tertiary);
+}
+
+.notalingua-main header .raccai {
+  font-family: var(--font-family-raccai);
+}
+
+.notalingua-main header img {
+  width: 2rem;
+}
+
+.notalingua-main h1 {
+  margin: 0;
+  font-weight: bolder;
+  font-size: 2rem;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+}
+
+.notalingua-main h1 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notalingua-main p {
+  margin: 0;
+  font-weight: light;
+  font-size: 1rem;
+  width: 60%;
+  text-align: center;
+  line-height: 28px;
+}
+
+.notalingua-main .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notalingua-main .buttons .primary,
+.notalingua-main .buttons .secondary {
+  display: flex;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 5rem;
+  padding: .4rem 1rem;
+  color: var(--text);
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.notalingua-main .buttons .primary {
+  border: none;
+  background-color: var(--green-light);
+}
+
+.notalingua-main .buttons .secondary {
+  border: 2px solid var(--text);
+  color: var(--text);
+  background-color: transparent;
+}
+
+.notalingua-main .buttons .primary:hover,
+.notalingua-main .buttons .secondary:hover {
+  color: var(--text);
+  background-color: var(--green-lighter);
+  box-shadow: var(--notalingua-box-shadow);
+}
+
+
+.notalingua-main .icon {
+  width: 1rem;
+}
+
+.notalingua-main .title-icon {
+  width: 1.8rem;
+}
+
+.notalingua-main .text-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notalingua-main .intro {
+  padding-top: 3rem;
+  background-image: linear-gradient(
+    0deg,
+    var(--notalingua-primary),
+    var(--notalingua-secondary),
+    var(--notalingua-tertiary)
+  );
+}
+
+.notalingua-main .spans {
+  display: flex;
+  gap: 1rem;
+}
+
+.notalingua-main .spans span {
+  border: 2px dashed var(--text);
+  border-radius: 5rem;
+  padding: .4rem 1rem;
+  opacity: 0.5;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notalingua-main .adding {
+  background-color: var(--text);
+  color: var(--text2);
+}
+
+.notalingua-main .adding .spans,
+.notalingua-main .details .spans {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.notalingua-main .adding .spans span,
+.notalingua-main .details .spans span {
+  opacity: 0.8;
+  color: var(--text2);
+  border-color: var(--text2);
+}
+
+.notalingua-main .sort {
+  background-image: linear-gradient(
+    0deg,
+    var(--notalingua-secondary),
+    var(--notalingua-tertiary)
+  );
+  color: var(--text);
+}
+
+.notalingua-main .details {
+  background-color: var(--text);
+  color: var(--text2);
+}
+
+.notalingua-main .data {
+  background-color: var(--text2);
+  color: var(--text);
+}
+
+@media (max-width: 600px) {
+  .notalingua-main .intro,
+  .notalingua-main .adding,
+  .notalingua-main .sort,
+  .notalingua-main .details,
+  .notalingua-main .data,
+  .notalingua-main header,
+  .notalingua-main footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .notalingua-main footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--text2);
+    margin-bottom: 5rem;
+    margin-top: -3rem;
+  }
+
+  .notalingua-main .main-img {
+    width: 30rem;
+  }
+
+  .notalingua-main p {
+    width: 90%;
+  }
+
+  .notalingua-main h1 {
+    flex-direction: column;
+  }
+
+  .notalingua-main .spans {
+    flex-direction: column;
+  }
+
+  .notalingua-main .spans span {
+    font-size: 0.8rem;
+  }
+
+  .notalingua-main .adding .spans,
+  .notalingua-main .details .spans {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .notalingua-main .main-img {
+    width: 25rem;
+  }
+
+  .notalingua-main p {
+    width: 90%;
+  }
+
+  .notalingua-main h1 {
+    flex-direction: column;
+  }
+}

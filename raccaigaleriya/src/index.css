@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@font-face {
+  font-family: "ABS";
+  src: url("/fonts/Abrushow.ttf") format("truetype");
+}
+
+:root {
+  font-size: 16px;
+
+  --primary: #111111;
+  --secondary: #F38534;
+  --text: #E8E6E3;
+  --text2: #1b1b1b;
+  --hover-bg: #050505;
+  --main-bg: #020202;
+  --green-light: #42bb0a;
+  --green-lighter: #41d850;
+  --transition-speed: 150ms;
+  
+  --tagawika-main: #243e8080;
+  --tagawika-main-outline: #243E80;
+  
+  --notalingua-main: #36306281;
+  --notalingua-main-outline: #363062;
+  --notalingua-primary: #302874;
+  --notalingua-secondary: #6E62C8;
+  --notalingua-tertiary: #8D5CF4;
+  --notalingua-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+
+  --font-family: "Inclusive Sans", sans-serif;
+  --font-family-title: "Black Han Sans", sans-serif;
+  --font-family-raccai: "ABS", sans-serif;
+  --font-family-notalingua: "Outfit", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  background-color: var(--primary);
+}
+
+.main {
+  margin-left: 5em;
+  padding: 1em;
+  height: 100vh;
+}
