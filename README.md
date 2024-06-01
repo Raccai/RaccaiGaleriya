@@ -8,7 +8,7 @@ Welcome to Raccai's Mobile Applications repository! This repository hosts a coll
 
 NotaLingua is a word collation mobile app designed to conveniently list down words offline when encountered in daily life. The app allows users to add, edit, and sort words, as well as view details of each word within reach. It also provides data to keep track of progress.
 
-[Learn More](https://raccaigaleriya.vercel.app/notalingua)
+[Learn More](https://raccaigaleriya.vercel.app/)
 
 ### 2. Tagawika
 
